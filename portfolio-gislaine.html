@@ -1,146 +1,449 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="dark"> 
+<html lang="pt-BR" class="dark scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio | Gislaine web3</title>
+  <title>Gislaine Cristina Lopes | Desenvolvedora Full Stack & Web3 — Criadora do Ecossistema GBIT</title>
+  <meta name="description" content="Portfólio de Gislaine Cristina Lopes (gislaine-web3): Desenvolvedora Full Stack & Web3, criadora do Ecossistema GBIT (14 CLIs no NPM), GBit Shell e linguagem GITML.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class'
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
     }
     function toggleDarkMode() {
       document.documentElement.classList.toggle('dark');
     }
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans transition-colors duration-500">
-  <!-- Header -->
-  <header class="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-10 shadow-md">
-    <div class="max-w-5xl mx-auto text-center animate-fade-in">
-      <h1 class="text-4xl font-bold mb-2">💻 Gislaine web3</h1>
-      <p class="text-lg">Engenheira de Software Fullstack | Analista de Sistemas | Pré-MBA em Análise de Dados | Master Scrum Master | Bacharelado Administracao publica | Pos Graduacao MBA Gerenciamento De Projetos Ti</p>
-      <div class="flex justify-center gap-4 mt-4">
-        <a href="https://github.com/Gislaine-web3" target="_blank" class="bg-black px-4 py-2 rounded-xl hover:scale-105 transition transform">GitHub</a>
-        <a href="https://www.linkedin.com/in/gislaine-web3" target="_blank" class="bg-blue-700 px-4 py-2 rounded-xl hover:scale-105 transition transform">LinkedIn</a>
-        <a href="mailto:gislainelophes@gmail.com" class="bg-red-600 px-4 py-2 rounded-xl hover:scale-105 transition transform">Email</a>
+<body class="bg-slate-50 dark:bg-[#070913] text-slate-800 dark:text-slate-200 font-sans transition-colors duration-300 selection:bg-purple-500 selection:text-white">
+
+  <!-- Barra de Navegação Fixa -->
+  <nav class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-[#070913]/85 border-b border-slate-200 dark:border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#inicio" class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-purple-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+        ⚡ GISLAINE.WEB3
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="#sobre" class="hover:text-purple-500 transition">Sobre Mim</a>
+        <a href="#projetos" class="hover:text-purple-500 transition">Ecossistema & Projetos</a>
+        <a href="#competencias" class="hover:text-purple-500 transition">Stack</a>
+        <a href="#formacao" class="hover:text-purple-500 transition">Formação</a>
       </div>
-      <button onclick="toggleDarkMode()" class="mt-6 bg-white/20 px-4 py-2 rounded-lg hover:bg-white/30 transition">🌙 Alternar Dark Mode</button>
+      <div class="flex items-center gap-3">
+        <button onclick="toggleDarkMode()" aria-label="Alternar tema" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-sm transition">
+          🌗
+        </button>
+        <a href="https://github.com/Gislaine-web3" target="_blank" class="bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold px-4 py-2 rounded-xl shadow-md shadow-purple-600/20 transition">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Header -->
+  <header id="inicio" class="relative overflow-hidden bg-gradient-to-br from-purple-900 via-indigo-950 to-slate-950 text-white py-20 px-6 border-b border-purple-500/20">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(139,92,246,0.28),transparent_50%),radial-gradient(circle_at_bottom_left,rgba(6,182,212,0.2),transparent_50%)] pointer-events-none"></div>
+    <div class="max-w-5xl mx-auto text-center relative z-10 animate-fade-in">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold tracking-wide text-cyan-300 mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        14 Pacotes CLI no NPM · Extensões Ativas no VS Code Marketplace
+      </div>
+      
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
+        Gislaine Cristina Lopes
+      </h1>
+      <p class="text-xl md:text-2xl font-semibold text-purple-200 mb-4">
+        Desenvolvedora Full Stack & Web3 | Criadora do Ecossistema GBIT & GITML Language
+      </p>
+      <p class="text-sm md:text-base text-slate-300 max-w-3xl mx-auto leading-relaxed">
+        Bacharelado em Engenharia de Software (Gran Faculdade) · MBA em Gerenciamento de Projetos de TI · Bacharelado em Administração Pública
+      </p>
+
+      <!-- Botões Principais -->
+      <div class="flex flex-wrap justify-center gap-3 mt-8">
+        <a href="https://github.com/Gislaine-web3" target="_blank" class="bg-slate-900/90 hover:bg-black border border-slate-700 px-5 py-2.5 rounded-xl text-sm font-semibold hover:scale-105 transition transform flex items-center gap-2">
+          💻 GitHub (gislaine-web3)
+        </a>
+        <a href="https://www.linkedin.com/in/gislaine-web3" target="_blank" class="bg-blue-600 hover:bg-blue-500 px-5 py-2.5 rounded-xl text-sm font-semibold hover:scale-105 transition transform flex items-center gap-2">
+          🔗 LinkedIn
+        </a>
+        <a href="https://portfolio-gislaine.vercel.app/" target="_blank" class="bg-gradient-to-r from-purple-600 to-cyan-600 hover:opacity-95 px-5 py-2.5 rounded-xl text-sm font-semibold hover:scale-105 transition transform flex items-center gap-2 shadow-lg shadow-purple-500/25">
+          🌐 Portfólio Vercel
+        </a>
+        <a href="https://gislaine-web3.github.io/portfolio-gislaine-gitml/" target="_blank" class="bg-white/10 hover:bg-white/20 border border-white/20 px-5 py-2.5 rounded-xl text-sm font-semibold hover:scale-105 transition transform flex items-center gap-2">
+          ⚡ Portfólio GITML
+        </a>
+        <a href="mailto:gislainelophes@gmail.com" class="bg-rose-600 hover:bg-rose-500 px-5 py-2.5 rounded-xl text-sm font-semibold hover:scale-105 transition transform flex items-center gap-2">
+          ✉️ E-mail
+        </a>
+      </div>
     </div>
   </header>
 
-  <!-- Perfil Profissional -->
-  <section class="max-w-5xl mx-auto px-6 py-12 animate-slide-up">
-    <h2 class="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-4">👩‍💻 Perfil Profissional</h2>
-    <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-      Profissional experiente em desenvolvimento fullstack, com forte atuação em backend e frontend. Especialista em deploy, integração de APIs e tecnologias modernas como Docker, Postman e Vercel. Experiência em Web3, smart contracts e soluções financeiras em cripto. Foco em produtos escaláveis, robustos e com excelente experiência do utilizador.
-    </p>
-  </section>
-
-  <!-- Experiência Profissional -->
-  <section class="bg-gray-100 dark:bg-gray-800 py-12 animate-fade-in">
-    <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-6">💼 Experiência Profissional</h2>
-      <div class="space-y-6">
-        <div class="p-6 bg-white dark:bg-gray-700 shadow rounded-2xl hover:shadow-lg transition">
-          <h3 class="font-semibold text-lg">Engenheira de Software Fullstack – Tech Solutions (Remoto)</h3>
-          <p class="text-sm text-gray-500 dark:text-gray-300">Jan 2022 – Dez 2023 (2 anos)</p>
-          <ul class="list-disc ml-6 mt-2 text-gray-700 dark:text-gray-300">
-            <li>Desenvolvimento fullstack com React, Next.js e Python.</li>
-            <li>Automação de processos internos utilizando APIs e WebSockets.</li>
-            <li>Deploy de aplicações em Docker e Vercel.</li>
-            <li>Participação em reuniões Agile/Scrum e entrega de projetos em sprints.</li>
-          </ul>
+  <!-- Sobre Mim & Perfil Profissional -->
+  <section id="sobre" class="max-w-5xl mx-auto px-6 py-16 animate-slide-up">
+    <div class="flex flex-col md:flex-row gap-8 items-start">
+      <div class="flex-1">
+        <span class="text-xs font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">Sobre Mim</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white mt-1 mb-5">👩‍💻 Perfil Profissional</h2>
+        <div class="space-y-4 text-slate-700 dark:text-slate-300 leading-relaxed text-base">
+          <p>
+            Sou <strong>Desenvolvedora de Software Full Stack</strong> com forte atuação em soluções <strong>Web3</strong>, automação de ferramentas <strong>CLI no NPM</strong>, extensões para o <strong>Visual Studio Code</strong> e criação de linguagens declarativas (autora da linguagem <strong>GITML</strong>).
+          </p>
+          <p>
+            Criadora do <strong>Ecossistema GBIT</strong> — uma suíte autoral com <strong>14 ferramentas de linha de comando</strong> voltadas à produtividade, scaffolding de projetos, orquestração de processos e desenvolvimento blockchain.
+          </p>
+          <p>
+            Graduanda em <strong>Bacharelado em Engenharia de Software pela Gran Faculdade</strong>, combinando rigor técnico de arquitetura de software com ampla vivência prática na construção de ferramentas disponibilizadas publicamente para a comunidade dev, apoiada por formação sólida em <strong>Gestão de Projetos de TI (MBA)</strong> e <strong>Administração Pública</strong>.
+          </p>
         </div>
-        <div class="p-6 bg-white dark:bg-gray-700 shadow rounded-2xl hover:shadow-lg transition">
-          <h3 class="font-semibold text-lg">Estágio em Desenvolvimento – CodeFactory Labs</h3>
-          <p class="text-sm text-gray-500 dark:text-gray-300">Jul 2021 – Dez 2021 (6 meses)</p>
-          <ul class="list-disc ml-6 mt-2 text-gray-700 dark:text-gray-300">
-            <li>Desenvolvimento de módulos frontend em React.</li>
-            <li>Suporte na criação de APIs RESTful com Flask.</li>
-            <li>Testes e validação de endpoints no Postman.</li>
-            <li>Apresentação de projetos internos e publicação em ambiente de testes.</li>
-          </ul>
+
+        <!-- Links Rápidos de Repositórios -->
+        <div class="mt-6 pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-3">
+          <a href="https://github.com/Gislaine-web3/gbit-ecossistema" target="_blank" class="text-xs font-mono bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800 px-3.5 py-2 rounded-lg hover:border-purple-500 transition">
+            📦 github.com/Gislaine-web3/bit-ecossistema
+          </a>
+          <a href="https://github.com/Gislaine-web3/portfolio-gislaine" target="_blank" class="text-xs font-mono bg-cyan-100 dark:bg-cyan-950/60 text-cyan-700 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-800 px-3.5 py-2 rounded-lg hover:border-cyan-500 transition">
+            🗂️ github.com/Gislaine-web3/portfolio-gislaine
+          </a>
+          <a href="https://github.com/Gislaine-web3/portfolio-gislaine-gitml" target="_blank" class="text-xs font-mono bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 px-3.5 py-2 rounded-lg hover:border-emerald-500 transition">
+            ✨ github.com/Gislaine-web3/portfolio-gislaine-gitml
+          </a>
+          <a href="https://github.com/Gislaine-web3/gitml-language-npm" target="_blank" class="text-xs font-mono bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800 px-3.5 py-2 rounded-lg hover:border-purple-500 transition">
+            📦 github.com/Gislaine-web3/gitml-language-npm
+          </a>
+        </div>
+      </div>
+
+      <!-- Cards de Resumo Rápido -->
+      <div class="w-full md:w-72 grid grid-cols-2 md:grid-cols-1 gap-4">
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-3xl font-extrabold text-purple-600 dark:text-purple-400">14+</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">Ferramentas CLI publicadas no NPM Registry</div>
+        </div>
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-3xl font-extrabold text-cyan-600 dark:text-cyan-400">#1</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">GBit Shell no VS Code Marketplace</div>
+        </div>
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm col-span-2 md:col-span-1">
+          <div class="text-lg font-extrabold text-emerald-600 dark:text-emerald-400">Full Stack & Web3</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">React, Next.js, Node, Python, Go & Solidity</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Competências Técnicas -->
-  <section class="py-12 animate-fade-in">
+  <!-- Projetos & Ecossistema GBIT -->
+  <section id="projetos" class="bg-slate-100/80 dark:bg-slate-900/50 py-16 border-y border-slate-200 dark:border-slate-800/80 animate-fade-in">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-6">🛠️ Competências Técnicas</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-800 dark:text-gray-200">
-        <span>⚡ React, TypeScript, Vite, Next.js</span>
-        <span>⚡ Python, Flask, Remix, Flutter</span>
-        <span>⚡ WebSocket</span>
-        <span>⚡ APIs RESTful, autenticação, segurança</span>
-        <span>⚡ Docker, Vercel, CI/CD</span>
-        <span>⚡ Postman, testes unitários</span>
-        <span>⚡ SQL & NoSQL</span>
-        <span>⚡ Blockchain & Web3</span>
-        <span>⚡ Agile / Scrum</span>
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">Portfólio & Ecossistema GBIT</span>
+          <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white mt-1">🚀 Projetos & Ferramentas Autorais</h2>
+        </div>
+        <a href="https://github.com/Gislaine-web3/gbit-ecossistema" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-purple-600 dark:text-purple-400 hover:underline">
+          Ver todas as 14 CLIs no GitHub →
+        </a>
+      </div>
+
+      <!-- Grid Principal: Ferramentas GBIT & Linguagem GITML -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- 1. GITML -->
+        <a href="https://marketplace.visualstudio.com/items?itemName=gislaine-web3.gitml" target="_blank" class="group p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-xl hover:border-purple-500/50 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300">NPM & VS Code</span>
+              <span class="text-slate-400 group-hover:text-purple-400 transition">↗</span>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">✨ GITML Language</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              Linguagem de marcação declarativa autoral para estruturação rápida de interfaces web modernas em arquivos <code class="text-purple-400">.gitml</code> ou integrados a HTML5.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs font-mono text-slate-500">
+            npx gitml · Extensão VS Code
+          </div>
+        </a>
+
+        <!-- 2. GBit Shell -->
+        <a href="https://marketplace.visualstudio.com/items?itemName=gislaine.gbit-shell-terminal" target="_blank" class="group p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-xl hover:border-cyan-500/50 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300">★ #1 Marketplace</span>
+              <span class="text-slate-400 group-hover:text-cyan-400 transition">↗</span>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">🖥️ GBit Shell</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              Terminal inteligente integrado ao VS Code com autocomplete contextual, status Git em tempo real e publicação no GitHub em um comando via <code class="text-cyan-400">ghpush</code>.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs font-mono text-slate-500">
+            VS Code Extension API
+          </div>
+        </a>
+
+        <!-- 3. create-gbit-app (Vite / React) -->
+        <a href="https://www.npmjs.com/package/create-gbit-app" target="_blank" class="group p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-xl hover:border-indigo-500/50 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300">CLI Scaffolding</span>
+              <span class="text-slate-400 group-hover:text-indigo-400 transition">↗</span>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">⚡ create-gbit-app (Vite)</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              Gerador instantâneo de projetos modernos com Vite, React e TypeScript já configurados com estrutura limpa e pronta para produção.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs font-mono text-slate-500">
+            npx create-gbit-app
+          </div>
+        </a>
+
+        <!-- 4. gbit-db-dados -->
+        <a href="https://www.npmjs.com/package/gbit-db-dados" target="_blank" class="group p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-xl hover:border-amber-500/50 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300">Banco NoSQL & CLI</span>
+              <span class="text-slate-400 group-hover:text-amber-400 transition">↗</span>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">🗄️ gbit-db-dados</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              Banco de dados NoSQL local orientado a arquivos, utilizável tanto por linha de comando quanto como biblioteca Node.js para persistência ágil.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs font-mono text-slate-500">
+            npm i gbit-db-dados
+          </div>
+        </a>
+
+        <!-- 5. gbit-container -->
+        <a href="https://github.com/Gislaine-web3/gbit-container" target="_blank" class="group p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-xl hover:border-emerald-500/50 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-teal-100 dark:bg-teal-950 text-teal-700 dark:text-teal-300">DevOps & Processos</span>
+              <span class="text-slate-400 group-hover:text-teal-400 transition">↗</span>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">📦 gbit-container</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              Orquestrador nativo de processos leves com streaming de logs em tempo real para Node.js, Python, Go e stacks de IA sem dependência pesada de Docker.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs font-mono text-slate-500">
+            Process Manager · SSE Logs
+          </div>
+        </a>
+
+        <!-- 6. gbit-next -->
+        <a href="https://github.com/Gislaine-web3/cli-gbit-next" target="_blank" class="group p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-xl hover:border-pink-500/50 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-pink-100 dark:bg-pink-950 text-pink-700 dark:text-pink-300">Next.js CLI</span>
+              <span class="text-slate-400 group-hover:text-pink-400 transition">↗</span>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">▲ gbit-next</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              CLI especializada para inicializar aplicações Full Stack em Next.js com roteamento moderno, TypeScript e boas práticas pré-configuradas.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs font-mono text-slate-500">
+            npx gbit-next
+          </div>
+        </a>
+
+        <!-- 7. Portfólio Digital Vercel & GITML -->
+        <a href="https://portfolio-gislaine.vercel.app/" target="_blank" class="group p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-xl hover:border-purple-500/50 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300">Web App Live</span>
+              <span class="text-slate-400 group-hover:text-purple-400 transition">↗</span>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">🌐 Portfólio Gislaine (Vercel)</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              Aplicação web hospedada na Vercel reunindo trajetória profissional, arquitetura de projetos e demonstrações interativas.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs font-mono text-slate-500">
+            portfolio-gislaine.vercel.app
+          </div>
+        </a>
+
+        <!-- 8. Web3 & Smart Contracts (gbit-stakin / gbit-address) -->
+        <a href="https://github.com/Gislaine-web3/cli-gbit-address" target="_blank" class="group p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:shadow-xl hover:border-orange-500/50 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-orange-100 dark:bg-orange-950 text-orange-700 dark:text-orange-300">Web3 & EVM</span>
+              <span class="text-slate-400 group-hover:text-orange-400 transition">↗</span>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">⛓️ gbit-stakin & gbit-address</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              Simulação local de staking em smart contracts Solidity e gerador instantâneo de carteiras de teste EVM com chaves privadas.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs font-mono text-slate-500">
+            Solidity · Foundry · Hardhat
+          </div>
+        </a>
+
+        <!-- 9. Ecossistema Completo -->
+        <a href="https://github.com/Gislaine-web3/gbit-ecossistema" target="_blank" class="group p-6 bg-gradient-to-br from-purple-600 to-indigo-700 text-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-white/20 text-white">Repositório Central</span>
+              <span class="text-white/80 group-hover:translate-x-0.5 transition">↗</span>
+            </div>
+            <h3 class="font-bold text-lg mb-2">🧰 Ecossistema GBIT Completo</h3>
+            <p class="text-sm text-purple-100 leading-relaxed">
+              Explore o repositório oficial com documentação, código-fonte e todas as 14 ferramentas CLI (<code class="text-white font-semibold">gbit-fix</code>, <code class="text-white font-semibold">gbit-start</code>, <code class="text-white font-semibold">gbit-readme</code> e mais).
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/15 text-xs font-mono text-purple-200">
+            github.com/Gislaine-web3/gbit-ecossistema
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
 
-  <!-- Projetos Destacados -->
-  <section class="max-w-5xl mx-auto px-6 py-12 animate-slide-up">
-    <h2 class="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-6">⭐ Projetos Destacados</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <a href="https://you-tube-replica-smoky.vercel.app/" target="_blank" class="p-6 bg-white dark:bg-gray-700 shadow rounded-2xl hover:shadow-lg hover:scale-105 transition transform">
-        <h3 class="font-semibold text-lg mb-2">📺 YouTube Replica</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300">Replica funcional do YouTube com frontend e backend integrados.</p>
-      </a>
-      <a href="https://tradepro-pi.vercel.app/" target="_blank" class="p-6 bg-white dark:bg-gray-700 shadow rounded-2xl hover:shadow-lg hover:scale-105 transition transform">
-        <h3 class="font-semibold text-lg mb-2">📈 TradePro</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300">Plataforma de home broker com integração TradingView.</p>
-      </a>
-      <a href="https://bot-binance-trading-7wps.vercel.app/" target="_blank" class="p-6 bg-white dark:bg-gray-700 shadow rounded-2xl hover:shadow-lg hover:scale-105 transition transform">
-        <h3 class="font-semibold text-lg mb-2">🤖 Bot Binance Trading</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300">Bot automatizado para trading na Binance.</p>
-      </a>
-      <a href="https://coingbit-crypto-exchange-6ceb848d.vercel.app/" target="_blank" class="p-6 bg-white dark:bg-gray-700 shadow rounded-2xl hover:shadow-lg hover:scale-105 transition transform">
-        <h3 class="font-semibold text-lg mb-2">💱 Coingbit Crypto Exchange</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300">Plataforma de exchange de criptomoedas.</p>
-      </a>
+  <!-- Competências Técnicas & Stack Tecnológica -->
+  <section id="competencias" class="max-w-5xl mx-auto px-6 py-16 animate-fade-in">
+    <span class="text-xs font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">Conhecimentos</span>
+    <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white mt-1 mb-8">🛠️ Competências Técnicas & Stack Tecnológica</h2>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h3 class="font-bold text-base text-cyan-600 dark:text-cyan-400 mb-3">🎨 Frontend & UI</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          React, Next.js, TypeScript, HTML5, CSS3, Tailwind CSS e linguagem declarativa <strong>GITML</strong>.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h3 class="font-bold text-base text-emerald-600 dark:text-emerald-400 mb-3">⚙️ Backend & APIs</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          Node.js, Express, Fastify, Python (FastAPI / Flask), Go (Fiber), WebSockets e REST APIs.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h3 class="font-bold text-base text-amber-600 dark:text-amber-400 mb-3">🗄️ Bancos de Dados</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          PostgreSQL, SQLite, MySQL, Redis e <strong>GBit DB Dados</strong> (NoSQL local orientado a arquivos).
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h3 class="font-bold text-base text-purple-600 dark:text-purple-400 mb-3">⛓️ Web3 & Smart Contracts</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          Solidity, EVM, Ethers.js, Wagmi, Viem, Hardhat, Foundry e protocolos DeFi Staking.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h3 class="font-bold text-base text-indigo-600 dark:text-indigo-400 mb-3">⌨️ Ferramentas CLI & VS Code</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          Publicação no NPM Registry, VS Code Extension API, automação de terminais e Bash/Zsh.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h3 class="font-bold text-base text-rose-600 dark:text-rose-400 mb-3">🚀 DevOps & Gestão Ágil</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          Git, GitHub Actions CI/CD, Docker, Vercel, Render, Scrum Master e Gerenciamento de Projetos de TI.
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- Certificações -->
-  <section class="bg-gray-100 dark:bg-gray-800 py-12 animate-fade-in">
+  <!-- Formação Acadêmica & Certificações -->
+  <section id="formacao" class="bg-slate-100/80 dark:bg-slate-900/50 py-16 border-t border-slate-200 dark:border-slate-800/80 animate-fade-in">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-4">📜 Certificações</h2>
-      <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
-        <li>🎓 Analista de Sistemas</li>
-        <li>🎓 Bacharelado Engenheira de Software</li>
-        <li>🎓 Pré-MBA em Análise de Dados</li>
-        <li>🎓 Master Scrum Master</li>
-        <li>🎓Bacharelado Administracao Publica</li>  
-        <li>🎓Pos-Graduacao MBA Gerenciamento De Projetos Ti</li>
-      </ul>
+      <span class="text-xs font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">Educação & Qualificações</span>
+      <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white mt-1 mb-8">🎓 Formação Acadêmica & Certificações</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 mb-10">
+        <!-- Formação 1 -->
+        <div class="p-6 bg-white dark:bg-slate-900 border-l-4 border-purple-500 rounded-2xl shadow-sm">
+          <span class="text-xs font-semibold text-purple-500 uppercase">Em andamento</span>
+          <h3 class="font-bold text-lg text-slate-900 dark:text-white mt-1">Bacharelado em Engenharia de Software</h3>
+          <p class="text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Gran Faculdade (Faculdade Gran)</p>
+          <p class="text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
+            Arquitetura de Software, Estrutura de Dados e Algoritmos, Gestão de Bancos de Dados, Engenharia de Requisitos, DevOps e Segurança da Informação.
+          </p>
+        </div>
+
+        <!-- Formação 2 -->
+        <div class="p-6 bg-white dark:bg-slate-900 border-l-4 border-cyan-500 rounded-2xl shadow-sm">
+          <span class="text-xs font-semibold text-cyan-500 uppercase">Pós-Graduação</span>
+          <h3 class="font-bold text-lg text-slate-900 dark:text-white mt-1">MBA em Gerenciamento de Projetos de TI</h3>
+          <p class="text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Especialização em Tecnologia</p>
+          <p class="text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
+            Governança de TI, metodologias ágeis, planejamento estratégico e gestão de equipes e entregas de software.
+          </p>
+        </div>
+
+        <!-- Formação 3 -->
+        <div class="p-6 bg-white dark:bg-slate-900 border-l-4 border-emerald-500 rounded-2xl shadow-sm">
+          <span class="text-xs font-semibold text-emerald-500 uppercase">Graduação</span>
+          <h3 class="font-bold text-lg text-slate-900 dark:text-white mt-1">Bacharelado em Administração Pública</h3>
+          <p class="text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Ensino Superior Concluído</p>
+          <p class="text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
+            Visão de processos organizacionais, eficiência administrativa, compliance e gestão sistêmica de projetos.
+          </p>
+        </div>
+      </div>
+
+      <!-- Qualificações Complementares -->
+      <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
+        <h3 class="font-bold text-base text-slate-900 dark:text-white mb-4">📜 Qualificações & Certificações Complementares</h3>
+        <div class="flex flex-wrap gap-3 text-sm">
+          <span class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">🎓 Analista de Sistemas</span>
+          <span class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">📊 Pré-MBA em Análise de Dados</span>
+          <span class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">🔄 Master Scrum Master</span>
+          <span class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">⛓️ Arquitetura Web3 & Smart Contracts</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-6 mt-12 animate-fade-in">
-    <div class="max-w-5xl mx-auto text-center">
-      <p class="mb-2">🌐 <a href="https://github.com/Gislaine-web3" class="underline">GitHub</a> | <a href="https://www.linkedin.com/in/gislaine-programadora" class="underline">LinkedIn</a></p>
-      <p>✉️ gislainelophes@gmail.com</p>
-      <p class="mt-2 text-sm">© 2025 Gislaine Programadora</p>
+  <footer class="bg-gradient-to-r from-purple-950 via-indigo-950 to-slate-950 text-slate-300 py-10 border-t border-purple-500/20">
+    <div class="max-w-5xl mx-auto px-6 text-center space-y-4">
+      <div class="font-bold text-white text-lg">Gislaine Cristina Lopes · gislaine-web3</div>
+      <div class="flex flex-wrap justify-center gap-6 text-sm">
+        <a href="https://github.com/Gislaine-web3" target="_blank" class="hover:text-white underline underline-offset-4">GitHub</a>
+        <a href="https://github.com/Gislaine-web3/gbit-ecossistema" target="_blank" class="hover:text-white underline underline-offset-4">Ecossistema GBIT</a>
+        <a href="https://github.com/Gislaine-web3/gitml-language-npm" target="_blank" class="hover:text-white underline underline-offset-4">gitml-language-npm</a>
+        <a href="https://portfolio-gislaine.vercel.app/" target="_blank" class="hover:text-white underline underline-offset-4">Portfólio Vercel</a>
+        <a href="https://www.linkedin.com/in/gislaine-web3" target="_blank" class="hover:text-white underline underline-offset-4">LinkedIn</a>
+         <a href="https://github.com/in/gbit-shell" target="_blank" class="hover:text-white underline underline-offset-4">Gbit-shell</a>
+        <a href="mailto:gislainelophes@gmail.com" class="hover:text-white underline underline-offset-4">gislainelophes@gmail.com</a>
+      </div>
+      <p class="text-xs text-slate-400 pt-2">© 2026 Gislaine Cristina Lopes (gislaine-web3) · Todos os direitos reservados</p>
     </div>
   </footer>
 
   <!-- Estilos de Animação -->
   <style>
-    .animate-fade-in { animation: fadeIn 1.5s ease-in-out; }
-    .animate-slide-up { animation: slideUp 1s ease-in-out; }
+    .animate-fade-in { animation: fadeIn 1s ease-out; }
+    .animate-slide-up { animation: slideUp 0.8s ease-out; }
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
     @keyframes slideUp {
-      from { opacity: 0; transform: translateY(20px); }
+      from { opacity: 0; transform: translateY(18px); }
       to { opacity: 1; transform: translateY(0); }
     }
   </style>
