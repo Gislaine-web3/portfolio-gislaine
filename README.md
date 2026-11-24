@@ -1,4 +1,4 @@
-# 🌐 Portfólio - Gislaine Programadora
+# 🌐 Portfólio - Gislaine web3
 
 Este é o meu portfólio online desenvolvido em **HTML + TailwindCSS**, com **dark mode** e **animações modernas**.  
 
@@ -56,9 +56,9 @@ vercel
 
 📬 Contato
 
-GitHub: https://github.com/Gislaine-programadora
+GitHub: https://github.com/Gislaine-web3
 
-Linkedin: https://www.linkedin.com/in/gislaine-programadora
+Linkedin: https://www.linkedin.com/in/gislaine-web3
 
 Email: gislainelophes@gmail.com
 
