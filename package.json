@@ -1,7 +1,7 @@
 {
   "name": "portfolio-gislaine",
   "version": "1.0.0",
-  "description": "Portfólio online de Gislaine Programadora",
+  "description": "Portfólio online de Gislaine web3",
   "main": "index.html",
   "scripts": {
     "start": "npx http-server -p 3000"
@@ -10,10 +10,10 @@
     "portfolio",
     "html",
     "tailwind",
-    "programadora",
+    "web3",
     "gislaine"
   ],
-  "author": "Gislaine Programadora",
+  "author": "Gislaine web3",
   "license": "MIT",
   "dependencies": {
     "http-server": "^14.1.1"
